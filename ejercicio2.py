@@ -5,6 +5,9 @@ import numpy as np
 
 x = np.int_(np.random.random(100)*1000)
 print(x)
-
-
+i=0
+while x[i]<800 and i<len(x):
+    if(x[i]%2==1):
+        print(x[i])
+    i+=1
 
