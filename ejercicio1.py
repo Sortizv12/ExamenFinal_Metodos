@@ -14,7 +14,7 @@ h=x[1]-x[0]
 #deriv1=(fx[1:]-fx[:-1])/h
 deriv2=(fx[2:]-(2*fx[1:-1])+fx[:-2])/(h**2)
 #deriv2=(deriv1[1:]-deriv1[:-1])/h
-#plt.plot(x,fx,label='funcion')
+plt.plot(x,fx,label='funcion')
 #plt.plot(x[1:],deriv1,label='1ra derivada')
 plt.plot(x[1:-1],deriv2,label='2da derivada')
 plt.legend()
